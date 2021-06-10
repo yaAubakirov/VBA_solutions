@@ -17,3 +17,13 @@ Here I store my VBA macros
   So first macro checks if this TQ is General. If it is General TQ it writes Yes to dedicated columns, in another result writes No. After that for non-General TQs it takes short name of module concats it with first DP in a cell and inserts to dedicated cell. And so on till the end
   
   This what macro does. Example is attached
+
+### 2. submissionsFill macro
+
+One guy asked me to creat macro which one takes data from one file and fills another based on conditions.
+
+As I explaned before there are modules and DPs. DPs are submitted for checking and contractor assigns status for DP. Code 1 - couldn't be approved, need to correct. Code 2 - approved but there are small corrections. Code 3 - approved.
+
+So based on marged module and DP string need to find statuses for DP and fill statuses in a row in a chronological order. If DP wasn't send need to write "Not submitted". If it is submitted but it is still on checking need to write "Under Review"
+
+As an example there are files 'table_to_fill.xlsm' and 'table_to_parse.xlsx'. Open first file, check VBA and run module, select file 'table_to_parse.xlsx' and enjoy
